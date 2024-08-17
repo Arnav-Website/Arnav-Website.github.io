@@ -1,3 +1,11 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
 .list-content {
     display: flex;
     padding: 20px;
@@ -9,6 +17,8 @@
     justify-content: center;
     animation: fadeListIn 1s ease-in-out forwards;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+    margin-top: 3%;
 }
 
 .list {
@@ -22,15 +32,25 @@
     font-size: 30px;
 }
 
-.images {
+.images_1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; /* This evenly spaces the images */
-    height: 100vh;
+    justify-content: space-between;
+    height: 600px; /* Same as .list-content height */
     width: 20%;
-    margin-left: 1%;
+    margin: 0 1%;
+    
 }
 
+.images_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px; /* Same as .list-content height */
+    width: 20%;
+    margin: 0 1%;
+    margin-top: 1%;
+}
 
 .image {
     border-radius: 20px;
@@ -40,21 +60,24 @@
 }
 
 #spelling-image {
-    /*position: absolute;
-    top: 100px;
-    left: 50px;*/
     width: 300px;
     height: 200px;
 }
 
 #editorial-image {
-    /*position: absolute;
-    top: 650px;
-    left: 1600px;*/
     width: 300px;
     height: 200px;
 }
 
+#trophy-image {
+    width: 300px;
+    height: 300px;
+}
+
+#plaque-image {
+    width: 300px;
+    height: 350px;
+}
 
 @keyframes fadeListIn {
     0% {
@@ -69,4 +92,3 @@
         opacity: 1;
     }
 }
-
