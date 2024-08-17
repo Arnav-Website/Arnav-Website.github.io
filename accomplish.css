@@ -1,13 +1,11 @@
 .list-content {
+    display: flex;
     padding: 20px;
-    width: 64%;
-    height: 73%;
+    width: 1200px;
+    height: 600px;
     border-radius: 20px;
-    position: absolute;
-    top: 170px;
-    left: 370px;
     background-image: linear-gradient(#a1c4fd, #c2e9fb);
-    align-items: center;
+    align-content: center;
     justify-content: center;
     animation: fadeListIn 1s ease-in-out forwards;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
@@ -24,6 +22,16 @@
     font-size: 30px;
 }
 
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* This evenly spaces the images */
+    height: 100vh;
+    width: 20%;
+    margin-left: 1%;
+}
+
+
 .image {
     border-radius: 20px;
     animation: fadeListIn 1s ease-in-out forwards;
@@ -32,27 +40,19 @@
 }
 
 #spelling-image {
-    position: absolute;
+    /*position: absolute;
     top: 100px;
-    left: 50px;
-    width: 16%;
-    height: 24%;
-}
-
-#editorial-image {
-    position: absolute;
-    top: 650px;
-    left: 1600px;
+    left: 50px;*/
     width: 300px;
     height: 200px;
 }
 
-img {
-    transition: transform 0.3s ease; /* Optional: Adds smooth scaling transition */
-}
-
-img:hover {
-    transform: scale(1.5); /* Scales the image to 150% of its original size */
+#editorial-image {
+    /*position: absolute;
+    top: 650px;
+    left: 1600px;*/
+    width: 300px;
+    height: 200px;
 }
 
 
@@ -69,3 +69,4 @@ img:hover {
         opacity: 1;
     }
 }
+
