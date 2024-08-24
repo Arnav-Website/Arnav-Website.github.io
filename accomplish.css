@@ -9,8 +9,7 @@
 .list-content {
     display: flex;
     padding: 20px;
-    width: 1200px;
-    height: 600px;
+    width: fit-content;
     border-radius: 20px;
     background-image: linear-gradient(#a1c4fd, #c2e9fb);
     align-content: center;
@@ -32,51 +31,27 @@
     font-size: 30px;
 }
 
-.images_1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 600px; /* Same as .list-content height */
-    width: 20%;
-    margin: 0 1%;
-    
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
+    grid-template-rows: repeat(2, auto); /* Creates 2 rows with automatic height */
+    gap: 10px; /* Adjust the gap between images if needed */
+    width: 50%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the grid horizontally */
 }
 
-.images_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 600px; /* Same as .list-content height */
-    width: 20%;
-    margin: 0 1%;
-    margin-top: 1%;
+.images .image {
+    width: 100%; /* Ensure images fill the grid cells */
+    height: auto; /* Maintain aspect ratio of images */
+    object-fit: cover; /* Cover the grid cell while preserving aspect ratio */
 }
+
 
 .image {
     border-radius: 20px;
     animation: fadeListIn 1s ease-in-out forwards;
     border: 5px solid #555;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-#spelling-image {
-    width: 300px;
-    height: 200px;
-}
-
-#editorial-image {
-    width: 300px;
-    height: 200px;
-}
-
-#trophy-image {
-    width: 300px;
-    height: 300px;
-}
-
-#plaque-image {
-    width: 300px;
-    height: 350px;
 }
 
 @keyframes fadeListIn {
